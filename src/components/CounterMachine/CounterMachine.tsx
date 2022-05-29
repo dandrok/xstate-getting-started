@@ -11,13 +11,47 @@ export const CounterMachine = () => {
         margin: '1rem',
         display: 'flex',
         flexDirection: 'column',
-
+        // border: 'solid gray 1px',
         alignItems: 'center',
+        padding: '1rem',
+        borderRadius: '0.5rem',
+        gap: '0.25rem',
+        boxShadow: '0px 0px 10px -5px #000000',
       }}
     >
-      <output>{state.context.count}</output>
-      <button onClick={() => send('INCREMENT')}>increment number</button>
-      <button onClick={() => send('DECREMENT')}>decrement number</button>
+      <output style={{ fontSize: '2rem' }}>{state.context.count}</output>
+      <button
+        style={{
+          width: '100%',
+          padding: '0.5rem',
+          background: 'skyblue',
+          border: 'none',
+          borderRadius: '0.20rem',
+          color: 'white',
+          textTransform: 'uppercase',
+
+          fontWeight: 'bold',
+        }}
+        onClick={() => send('INCREMENT')}
+      >
+        increment
+      </button>
+      <button
+        style={{
+          width: '100%',
+          padding: '0.5rem',
+          background: 'skyblue',
+          border: 'none',
+          borderRadius: '0.20rem',
+          color: 'white',
+          textTransform: 'uppercase',
+
+          fontWeight: 'bold',
+        }}
+        onClick={() => send('DECREMENT')}
+      >
+        decrement
+      </button>
     </div>
   )
 }
