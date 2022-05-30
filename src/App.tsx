@@ -1,4 +1,5 @@
 import { CounterMachine } from './components/CounterMachine/CounterMachine'
+import { TemperatureMachine } from './components/TemperatureMachine/TemperatureMachine'
 import { TrafficLightMachine } from './components/TrafficLightMachine/TrafficLightMachine'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <TrafficLightMachine />
       <CounterMachine />
+      <TemperatureMachine />
     </>
   )
 }

@@ -1,6 +1,6 @@
 import { useMachine } from '@xstate/react'
 import React from 'react'
-import { counterMachine } from '../../counterMachine'
+import { counterMachine } from '../../stateMachines/counterMachine'
 
 export const CounterMachine = () => {
   //send is something like dispatch

@@ -1,6 +1,6 @@
 import { useMachine } from '@xstate/react'
 import './TrafficLightMachine.css'
-import { trafficLightMachine } from '../../trafficLightMachine'
+import { trafficLightMachine } from '../../stateMachines/trafficLightMachine'
 
 export const TrafficLightMachine = () => {
   const [current, send] = useMachine(trafficLightMachine)

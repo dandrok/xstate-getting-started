@@ -17,7 +17,7 @@ export const trafficLightMachine = createMachine<
   TrafficLightStates
 >({
   id: 'traffic-light',
-  initial: 'ON',
+  initial: 'OFF',
   states: {
     ON: {
       on: { TURN_OFF: 'OFF' },
