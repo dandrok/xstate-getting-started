@@ -31,7 +31,7 @@ export const TemperatureMachine = (props: Props) => {
           onChange={(e) => {
             send('CELSIUS', { value: e.target.value })
           }}
-          placeholder='e.g., 0'
+          placeholder='0'
         />
         <span>˚C</span>
       </label>
@@ -50,7 +50,7 @@ export const TemperatureMachine = (props: Props) => {
           onChange={(e) => {
             send('FAHRENHEIT', { value: e.target.value })
           }}
-          placeholder='e.g., 32'
+          placeholder='32'
         />
         <span>˚F</span>
       </label>
